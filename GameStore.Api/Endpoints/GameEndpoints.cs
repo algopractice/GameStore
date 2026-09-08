@@ -62,7 +62,12 @@ public static class GameEndpoints
             };
             dbContext.Games.Add(game);
 
+
+            // ------------------------------------------------------------------------------------------------------------------------------------------------
             // NOTE : Check why the post id is populating with 0
+            // TODO : Also after population it is not returning in GET 
+            // ------------------------------------------------------------------------------------------------------------------------------------------------
+
             return Results.CreatedAtRoute(GetRouteName, new { id = game.Id }, game);
         });
 
