@@ -3,4 +3,5 @@ obj/
 .vs/
 *.user
 .DS_Store
-.vscode/
+.vscode/*.db
+.idea/
