@@ -24,6 +24,7 @@ public static class GameEndpoints
         // Get /Games . MapGet(path,handler)
         group.MapGet("/", () => games);
 
+        // TODO : Don't see GetRouteName in the header
         // Get / Game/id
         group.MapGet("/{id}", (int id) =>
         {
@@ -64,7 +65,7 @@ public static class GameEndpoints
 
 
             // ------------------------------------------------------------------------------------------------------------------------------------------------
-            // NOTE : Check why the post id is populating with 0
+            // TODO : Check why the post id and Genre id is populating with 0
             // TODO : Also after population it is not returning in GET 
             // ------------------------------------------------------------------------------------------------------------------------------------------------
 

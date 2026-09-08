@@ -5,3 +5,4 @@ obj/
 .DS_Store
 .vscode/*.db
 .idea/
+*.db
